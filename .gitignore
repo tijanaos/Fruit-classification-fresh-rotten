@@ -9,8 +9,8 @@ venv/
 .ipynb_checkpoints/
 
 # Data & trained models (ne komitujemo)
-data/
-models/
+/data/
+/models/
 
 # OS
 .DS_Store
