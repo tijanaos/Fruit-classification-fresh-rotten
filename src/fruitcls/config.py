@@ -1,23 +1,28 @@
 from dataclasses import dataclass
 from pathlib import Path
 
+
 @dataclass(frozen=True)
 class Config:
     # paths
     project_root: Path = Path(__file__).resolve().parents[2]
-    data_raw_dir: Path = project_root / "data" / "raw"
+
+    # dataset root (folder koji direktno sadrži 6 class foldera)
+    data_raw_dir: Path = project_root / "data" / "raw" / "dataset" / "Train"
+    data_test_dir: Path = project_root / "data" / "raw" / "dataset" / "Test"
+
     reports_dir: Path = project_root / "reports"
     reports_metrics_dir: Path = reports_dir / "metrics"
     reports_figures_dir: Path = reports_dir / "figures"
     models_dir: Path = project_root / "models"
 
-    # dataset
+    # dataset 
     class_names = [
         "freshapples",
-        "freshbananas",
+        "freshbanana",
         "freshoranges",
         "rottenapples",
-        "rottenbananas",
+        "rottenbanana",
         "rottenoranges",
     ]
 
