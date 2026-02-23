@@ -14,6 +14,6 @@ def test_one_train_step():
     model = build_custom_cnn((cfg.img_size, cfg.img_size, 3), 6)
     model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
 
-    # samo 1 batch da proverimo da ništa ne puca
+    # samo 1 batch da proverimo da nista ne puca
     model.fit(loaders.train.take(1), epochs=1, verbose=0)
     assert True

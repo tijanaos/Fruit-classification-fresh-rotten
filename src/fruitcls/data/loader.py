@@ -15,16 +15,15 @@ class DataLoaders:
 
 
 def _augment() -> tf.keras.Model:
-    # augment samo za train
     return tf.keras.Sequential(
         [
             tf.keras.layers.RandomFlip("horizontal"),
             tf.keras.layers.RandomRotation(0.08),
-            tf.keras.layers.RandomBrightness(0.15),
+            tf.keras.layers.RandomZoom(0.10),
+            tf.keras.layers.RandomContrast(0.15),
         ],
         name="augment",
     )
-
 
 def build_train_val_loaders(
     train_dir: Path,

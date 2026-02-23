@@ -1,0 +1,33 @@
+{
+  "model": "custom",
+  "model_path": "C:\\Users\\Lenovo\\Desktop\\Soft_projekat\\fruit-fresh-rotten\\models\\custom_cnn\\best.keras",
+  "test_dir": "C:\\Users\\Lenovo\\Desktop\\Soft_projekat\\fruit-fresh-rotten\\data\\raw\\dataset\\Test",
+  "loss": 0.3045749366283417,
+  "accuracy": 0.9222833562585969,
+  "macro_precision": 0.9106592165520301,
+  "macro_recall": 0.9232716609920303,
+  "per_class_precision": {
+    "freshapples": 0.9890109890109876,
+    "freshbanana": 0.9743875278396426,
+    "freshoranges": 0.9438502673796766,
+    "rottenapples": 0.8996692392502746,
+    "rottenbanana": 0.9921436588103243,
+    "rottenoranges": 0.6648936170212754
+  },
+  "per_class_recall": {
+    "freshapples": 0.9102402022755993,
+    "freshbanana": 0.9809417040358733,
+    "freshoranges": 0.9097938144329873,
+    "rottenapples": 0.8259109311740882,
+    "rottenbanana": 0.9822222222222211,
+    "rottenoranges": 0.9305210918114121
+  },
+  "class_names": [
+    "freshapples",
+    "freshbanana",
+    "freshoranges",
+    "rottenapples",
+    "rottenbanana",
+    "rottenoranges"
+  ]
+}

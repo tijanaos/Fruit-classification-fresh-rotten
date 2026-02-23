@@ -1,0 +1,33 @@
+{
+  "model": "mobilenet",
+  "model_path": "C:\\Users\\Lenovo\\Desktop\\Soft_projekat\\fruit-fresh-rotten\\models\\mobilenet\\best.keras",
+  "test_dir": "C:\\Users\\Lenovo\\Desktop\\Soft_projekat\\fruit-fresh-rotten\\data\\raw\\dataset\\Test",
+  "loss": 0.04560380429029465,
+  "accuracy": 0.9889958734525447,
+  "macro_precision": 0.9869012923243917,
+  "macro_recall": 0.9854079185364703,
+  "per_class_precision": {
+    "freshapples": 0.9799498746867156,
+    "freshbanana": 0.9999999999999989,
+    "freshoranges": 0.9946666666666639,
+    "rottenapples": 0.9858156028368784,
+    "rottenbanana": 0.9999999999999989,
+    "rottenoranges": 0.9609756097560952
+  },
+  "per_class_recall": {
+    "freshapples": 0.9886219974715537,
+    "freshbanana": 0.9999999999999989,
+    "freshoranges": 0.9613402061855645,
+    "rottenapples": 0.9848178137651812,
+    "rottenbanana": 0.9999999999999989,
+    "rottenoranges": 0.9776674937965236
+  },
+  "class_names": [
+    "freshapples",
+    "freshbanana",
+    "freshoranges",
+    "rottenapples",
+    "rottenbanana",
+    "rottenoranges"
+  ]
+}

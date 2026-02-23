@@ -16,7 +16,6 @@ def main():
     out_dir = cfg.project_root / "data" / "raw"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Ako su klase već tu, ne skidamo opet
     expected_root = cfg.data_raw_dir 
     expected = [expected_root / c for c in cfg.class_names]
     if all(p.exists() for p in expected):
@@ -41,7 +40,6 @@ def main():
     if missing:
         print("WARNING: Missing class folders:", missing)
         print("Check dataset structure in:", expected_root)
-        print("Tip: uradi 'dir /b /ad data\\raw' i vidi kako se raspakovalo.")
     else:
         print("✅ Dataset looks OK in:", expected_root)
 
